@@ -21,7 +21,7 @@ class ChatBot:
         self.proxy = proxy
         self.debug = debug
         self.sentry = sentry
-        self.login_local = getenv('LOGIN_LOCAL', True)
+        self.login_local = getenv('LOGIN_LOCAL', False)
         self.log_level = logging.DEBUG if debug else logging.WARN
         self.api_prefix = getenv('CHATGPT_API_PREFIX',
                                  'https://ai.fakeopen.com')
